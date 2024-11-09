@@ -47,21 +47,17 @@ Certifique-se de ter instalado:
    cd tarefas-backend
    ```
 
-   1. Navegue para a pasta `tarefas-backend`:
-   ```bash
-   cd tarefas-backend
-   ```
- Instale as dependências:
+2. Instale as dependências:
 
-  ```bash
-  dotnet restore
-  ```
+    ```bash
+    dotnet restore
+    ```
 
- Inicie o servidor backend:
+3. Inicie o servidor backend:
 
-  ```bash
-  dotnet run
-  ```
+    ```bash
+    dotnet run
+    ```
 
 O servidor backend será iniciado em http://localhost:5007.
 
@@ -93,8 +89,6 @@ Estrutura do Projeto
 ├── tarefas-backend
 │   ├── Controllers
 │   ├── Models
-│   ├── Data
-│   ├── Migrations
 │   ├── appsettings.json
 │   └── Program.cs
 └── tarefas-frontend
@@ -103,13 +97,16 @@ Estrutura do Projeto
     │   ├── components
     │   │   ├── TarefasList.js
     │   │   ├── TarefaForm.js
-    │   │   └── TarefaItem.js
     │   ├── Api.js
     │   └── App.js
+    │   └── App.css
     └── package.json
 ```
-tarefas-backend: Contém a API construída em .NET, incluindo controladores, modelos de dados e configurações do banco de dados.
+tarefas-backend: Contém a API construída em .NET.
 tarefas-frontend: Contém o código React que renderiza a interface do usuário.
+
+### Observação
+O banco de dados configurado para este projeto é em memória. Isso significa que os dados não serão salvos entre reinicializações do backend, o que é útil para desenvolvimento e testes rápidos. Para persistência, considere configurar um banco de dados como SQLite ou SQL Server, ajustando a string de conexão no arquivo appsettings.json do backend.
 
 ### Contribuição
 Contribuições são bem-vindas! Para contribuir:
