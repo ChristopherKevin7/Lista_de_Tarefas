@@ -1,6 +1,6 @@
 # Gerenciador de Tarefas
 
-Este é um projeto de Gerenciamento de Tarefas, construído com uma aplicação **frontend** em React e uma **API backend** em Node.js. A aplicação permite criar, listar, editar e excluir tarefas, bem como marcar tarefas como concluídas.
+Este é um projeto de Gerenciamento de Tarefas, construído com uma aplicação **frontend** em React e uma **API backend** em .Net. A aplicação permite criar, listar, editar e excluir tarefas, bem como marcar tarefas como concluídas.
 
 ## Índice
 
